@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using NUnit.Framework;
 using Math = TestNinja.Fundamentals.Math;
 
@@ -38,6 +40,16 @@ namespace TestNinja.NUnitTests
 
             // Assert 
             Assert.That(result, Is.EqualTo(expected));
+        }
+
+        [Test]
+        [TestCase(10, new[] { 1, 3, 5, 7, 9 })]
+        public void GetOddNumbers_PositiveLimitNumberUsed_OddNumbersTillReachLimit(int limit, IEnumerable<int> expected)
+        {
+            var result = _math.GetOddNumbers(limit);
+            Assert.That(result, Is.EqualTo(expected));
+            Assert.That(result, Is.Ordered);
+            Assert.That(result, Is.Unique);
         }
     }
 }
