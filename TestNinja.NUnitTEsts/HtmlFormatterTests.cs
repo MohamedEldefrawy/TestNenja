@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using TestNinja.Fundamentals;
 
-namespace TestNinja.NUnitTEsts
+namespace TestNinja.NUnitTests
 {
     [TestFixture]
     public class HtmlFormatterTests
