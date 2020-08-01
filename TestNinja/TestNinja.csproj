@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fundamentals\HtmlFormatter.cs" />
     <Compile Include="Fundamentals\Math.cs" />
     <Compile Include="Fundamentals\Reservations.cs" />
     <Compile Include="Program.cs" />
