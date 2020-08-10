@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fundamentals\CustomerController.cs" />
+    <Compile Include="Fundamentals\ErrorLogger.cs" />
     <Compile Include="Fundamentals\HtmlFormatter.cs" />
     <Compile Include="Fundamentals\Math.cs" />
     <Compile Include="Fundamentals\Reservations.cs" />
